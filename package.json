@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/NelsonL19/nelsonl19.github.io/issues"
   },
-  "homepage": "https://github.com/NelsonL19/nelsonl19.github.io#readme"
+  "homepage": "https://github.com/NelsonL19/nelsonl19.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "bulma": "^0.9.1",
+    "jquery": "^3.5.1"
+  }
 }
