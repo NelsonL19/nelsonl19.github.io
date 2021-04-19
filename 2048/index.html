@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COMP 426 2048 Game</title>
+
+        <!-- Include links to CSS stylesheets below -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    </head>
+
+    <body>
+        <!--This is the Information Box-->
+        <a class="navbar-item" href="../projects.html">
+            Back
+        </a>
+        <div class="box">
+            <h1 class="title has-text-centered">COMP 426 <strong>2048</strong> Game</h1>
+            <h2 class="subtitle has-text-centered">Slide to Combine Tiles with the Arrow Keys! Try and Create the Number
+                2048!</h2>
+             <!--<embed src="./assets/2048AceCombatMusic.mp3" loop="true" autostart="true" width="0" height="0">-->
+        </div>
+
+        <!--This is the Gameplay Box-->
+        <div id="gameplay" class="box has-text-centered">
+            <div id="score"></div>
+            <div id="hasLost"><h1>Keep Going! You Got This!</h1></div>
+            <div class="columns">
+                <div id="root1" class="column"></div>
+                <div id="root2" class="column"></div>
+                <div id="root3" class="column"></div>
+                <div id="root4" class="column"></div>
+            </div>
+        </div>
+
+        <!--This is the Reset/Score/State Box -->
+        <div class="box has-text-centered">
+            <button type="button" class="button is-danger is-light" name="reset">Reset the Game</button>
+            <!--<p>Music Source: <strong>Ace Combat 7 Original Soundtrack</strong></p>-->
+        </div>
+        <!-- Include links to JavaScript files below -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./engine/game.js" type="module"></script>
+        <script src="./engine/cview.js" type="module"></script>
+    </body>
+
+</html>
